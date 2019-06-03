@@ -26,8 +26,7 @@
       "server": "nodemon --watch server server/server.js",
       "build": "react-scripts build",
       "test": "react-scripts test",
-      "eject": "react-scripts eject",
-      "heroku-postbuild": "echo Skip build on Heroku"
+      "eject": "react-scripts eject"
    },
    "eslintConfig": {
       "extends": "react-app"
