@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api/submissions', submissionsRouter);
 
 // Serve static files
-app.use(express.static('server/server.js'));
+app.use(express.static('build'));
 
 // App Set //
 const PORT = process.env.PORT || 5000;
