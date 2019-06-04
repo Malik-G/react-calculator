@@ -24,16 +24,16 @@ router.post('/submit', (req, res) => {
    let insertValue = ''
    switch(op){
       case '+':
-         insertValue = `${num1} ${op} ${num2} = ${Math.round((parseInt(num1) + parseInt(num2)) * 100) / 100}`;
+         insertValue = `${num1} ${op} ${num2} = ${Math.round((parseFloat(num1) + parseFloat(num2)) * 100) / 100}`;
          break;
       case '-':
-         insertValue = `${num1} ${op} ${num2} = ${Math.round((parseInt(num1) - parseInt(num2)) * 100) / 100}`;
+         insertValue = `${num1} ${op} ${num2} = ${Math.round((parseFloat(num1) - parseFloat(num2)) * 100) / 100}`;
          break;
       case '*':
-         insertValue = `${num1} ${op} ${num2} = ${Math.round((parseInt(num1) * parseInt(num2)) * 100) / 100}`;
+         insertValue = `${num1} ${op} ${num2} = ${Math.round((parseFloat(num1) * parseFloat(num2)) * 100) / 100}`;
          break;
       case '/':
-         insertValue = `${num1} ${op} ${num2} = ${Math.round((parseInt(num1) / parseInt(num2)) * 100) / 100}`;
+         insertValue = `${num1} ${op} ${num2} = ${Math.round((parseFloat(num1) / parseFloat(num2)) * 100) / 100}`;
          break;
       default:
          break;
